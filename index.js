@@ -18,9 +18,9 @@ function logDriversByHometown(drivers, ht) {
 function driversByRevenue(drivers) {
     let nuDrivers = [...drivers]
     return nuDrivers.sort(function(a, b) {
-        return a.revenue > b.revenue
+        return b.revenue > a.revenue
     })
-}
+}S
 
 function driversByName(drivers) {
     let nuDrivers = [...drivers]
