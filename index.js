@@ -15,12 +15,11 @@ function logDriversByHometown(drivers, ht) {
     })
 }
 
-function driversByRevenue(drivers) {
-    let nuDrivers = [...drivers]
-    return nuDrivers.sort(function(a, b) {
-        return b.revenue > a.revenue
-    })
-}S
+const driversByRevenue = function (drivers) {
+  return drivers.slice().sort(function (driverOne, driverTwo) {
+    return driverOne.revenue - driverTwo.revenue;
+  });
+};
 
 function driversByName(drivers) {
     let nuDrivers = [...drivers]
